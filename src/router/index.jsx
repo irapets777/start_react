@@ -5,6 +5,7 @@ import StudentsPage from "../pages/Students";
 import SinglePostPage from "../pages/SinglePostPage";
 import { Route, Routes } from "react-router-dom";
 import Pec from "../pages/Pec";
+import Students from "../pages/Students";
 
 
 const RouterApp = () => {
@@ -15,6 +16,7 @@ const RouterApp = () => {
       <Route exact path="/posts" element={<Posts />}></Route>
       <Route exact path="/students" element={<StudentsPage />}></Route>
       <Route exact path="/pec" element={<Pec />}></Route>
+      <Route path="/" element={<Students />}></Route>
     </Routes>
   );
 };
