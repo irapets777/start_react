@@ -6,6 +6,7 @@ import SinglePostPage from "../pages/SinglePostPage";
 import { Route, Routes } from "react-router-dom";
 import Pec from "../pages/Pec";
 import Students from "../pages/Students";
+import Form from "../pages/Form";
 
 
 const RouterApp = () => {
@@ -17,6 +18,7 @@ const RouterApp = () => {
       <Route exact path="/students" element={<StudentsPage />}></Route>
       <Route exact path="/pec" element={<Pec />}></Route>
       <Route path="/" element={<Students />}></Route>
+      <Route exact path="/form" element={<Form />}></Route>
     </Routes>
   );
 };
